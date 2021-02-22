@@ -53,7 +53,7 @@ Twitter and Instagram APIs may provide access to food-related Instagram posts an
   * [Food_Environment_Atlas](https://github.com/michen00/)
     * United States Department of Agriculture, *Food Environment Atlas. V2020.09.10.* 2020. Distributed by Economic Research Service. Accessed Feb. 10, 2021. [Online]. Available: https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/
 * FoodData Central
- * United States Department of Agriculture, *FoodData Central. V2020.10.30.* 2020. Distributed by Agricultural Research service. Accessed Feb. 12, 2021. [Online]. Available: https://fdc.nal.usda.gov/download-datasets.html
+  * United States Department of Agriculture, *FoodData Central. V2020.10.30.* 2020. Distributed by Agricultural Research service. Accessed Feb. 12, 2021. [Online]. Available: https://fdc.nal.usda.gov/download-datasets.html
 
 ## Related resources
 * M. de Choudhury, S. Sharma, and E. Kiciman, "Characterizing dietary choices, nutrition, and language in food deserts via social media," in *Proc. 19th ACM Conf. Comput.-Supported Cooperative Work and Social Comput.,* San Francisco, California, USA, Feb. 27–Mar. 2, 2016, pp. 1157–1170. doi: https://doi.org/10.1145/2818048.2819956.
