@@ -57,7 +57,7 @@ def variants(line_in: str) -> list:
     )
     n = len(subpairs)
     combos = [bin(i)[2:].zfill(n) for i in range(int(n * "1", 2) + 1)]
-    patternizer = lambda x: x.join((r"\b", r"\b"))
+    patternizer = lambda x: x.join(("\b", "\b"))
     substituter = lambda x: [
         sub(patternizer(x[0]), x[1], line_in),
         sub(patternizer(x[1]), x[0], line_in),
@@ -112,6 +112,172 @@ for line in f:
             extend_newlines(_)
     else:
         extend_newlines(line)
+
+quickfix_filter = [
+    "Alarm",
+    "All American",
+    "AMP",
+    "Asian Kick",
+    "Avalon",
+    "Baby Back",
+    "Baja",
+    "Banzai",
+    "Beautiful Lily",
+    "Big Red",
+    "Bismark",
+    "Black Orchid",
+    "Blackened Preparation",
+    "Blue Lagoon",
+    "Blue Moon",
+    "Bottle",
+    "Breast",
+    "Brisk",
+    "Brownstone",
+    "Build Your Sampler",
+    "Burn It Boost",
+    "Buy Em By The Sack",
+    "Buzzard",
+    "By The Sack",
+    "BYO Sampler",
+    "Caesar",
+    "California Dreamin",
+    "Category 5 Hurricane",
+    "Category five Hurricane",
+    "ch Baja",
+    "ch The Traditional",
+    "Champaign",
+    "Chicago Club",
+    "Chik",
+    "Chik Club",
+    "Chillers",
+    "Choose 2",
+    "Choose Any 2 Combo",
+    "Choose Any two Combo",
+    "Choose a Spread",
+    "Choose two",
+    "Classic",
+    "Classic and Signature Combo",
+    "Classic Combo",
+    "Classic White",
+    "Close Talker",
+    "Clown Cone",
+    "Club Combo",
+    "Clubby",
+    "Coastal Trio",
+    "Colonial",
+    "Combo",
+    "Cone",
+    "Cone Head",
+    "Continental",
+    "Conundrum",
+    "Cosmopolitan",
+    "Crackers",
+    "Cream",
+    "Create Your Own 1",
+    "Create Your Own Combination",
+    "Create Your Own Combo",
+    "Create Your Own one",
+    "Cuties",
+    "Delirium Tremens",
+    "Deluxe",
+    "Diced",
+    "Diddy On The Beach",
+    "Doc X",
+    "Dona Paula",
+    "Double Bowl",
+    "Double Catch",
+    "Double Cone",
+    "Double Dish",
+    "Double Play Special",
+    "Double Stack",
+    "Double Winger",
+    "Dozen and a Half",
+    "Dressing",
+    "Dressings",
+    "Drizzle",
+    "Early Bird",
+    "Everything Smasher",
+    "ExtravaganZZa",
+    "Famous Star",
+    "Fantastic Floats",
+    "Far Niente",
+    "Farmhouse",
+    "Fatback",
+    "five Alarm",
+    "Flat Iron",
+    "Flat White",
+    "ice",
+    "L and T",
+    "La Terre",
+    "Large",
+    "laurel",
+    "maduro",
+    "Medium",
+    "Ocean Water",
+    "Play Points Deal",
+    "plus 2 x 2 x 2",
+    "plus Continental",
+    "plus Double Catch",
+    "plus Rooty",
+    "plus Traveler",
+    "Port",
+    "ranch",
+    "rape",
+    "seeds",
+    "Roll",
+    "Rooty",
+    "Salsa",
+    "side",
+    "Spam",
+    "Span",
+    "Traveler",
+    "water",
+    "x 4",
+    "x four",
+]
+quickfix_filter = ["".join(_.lower().split()) for _ in quickfix_filter]
+newlines = noDupesList(newlines)
+# print("before len: ", len(newlines), sep="")
+temp = []
+for i in newlines:
+    if "".join(i.lower().split()) in quickfix_filter:
+        pass
+    else:
+        temp.append(i)
+newlines = temp
+# print("after len: ", len(newlines), sep="")
+
+# temmporary fix
+for i in range(len(newlines) - 1, -1, -1):
+    line = newlines[i]
+    if any([x in line for x in ("oz", "ounce", "lb", "pound")]):
+        temp = []
+        for pair1 in (False, ("oz", "ounce"), ("oz", "ounces"), ("ozs", "ounces")):
+            for pair2 in (False, ("lb", "pound"), ("lb", "pounds"), ("lbs", "pounds")):
+                if pair1 and pair2:
+                    temp.extend(
+                        [
+                            line.replace(pair1[0], pair1[1]),
+                            line.replace(pair2[0], pair2[1]),
+                            line.replace(pair1[1], pair1[0]),
+                            line.replace(pair2[1], pair2[0]),
+                        ]
+                    )
+                elif pair1:
+                    temp.extend(
+                        [
+                            line.replace(pair1[0], pair1[1]),
+                            line.replace(pair1[1], pair1[0]),
+                        ]
+                    )
+                elif pair2:
+                    temp.extend(
+                        [
+                            line.replace(pair2[0], pair2[1]),
+                            line.replace(pair2[1], pair2[0]),
+                        ]
+                    )
+        newlines.extend(set(temp))
 
 # check and write
 newlines = sorted(noDupesList(newlines))
