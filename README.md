@@ -54,7 +54,7 @@ Twitter and Instagram APIs may provide access to food-related Instagram posts an
   * [FoodData Central](https://github.com/michen00/Springboard_capstone_project/tree/main/FoodData_Central_csv_2020-10-30)
     * United States Department of Agriculture, *FoodData Central. V2020.10.30.* 2020. Distributed by Agricultural Research service. Accessed Feb. 12, 2021. [ Online]. Available: https://fdc.nal.usda.gov/download-datasets.html
 
-## [Related resources](https://github.com/michen00/Springboard_capstone_project/tree/main/related_work)
+## [Related resources](https://github.com/michen00/Springboard_capstone_project/tree/main/related_work) merge this with references TODO
 * M. de Choudhury, S. Sharma, and E. Kiciman, "Characterizing dietary choices, nutrition, and language in food deserts via social media," in *Proc. 19th ACM Conf. Comput.-Supported Cooperative Work and Social Comput.,* San Francisco, California, USA, Feb. 27–Mar. 2, 2016, pp. 1157–1170. doi: https://doi.org/10.1145/2818048.2819956.
 * M. J. Widener and W. Li, "Using geolocated Twitter data to monitor the prevalence of healthy and unhealthy food references across the US," *Appl. Geopgrahy,* vol. 54, pp. 189–197, Oct. 2014, doi: https://doi.org/10.1016/j.apgeog.2014.07.017.
 * United States Federal Communincations Commission. "API Documentation for Developers." FCC.gov. https://geo.fcc.gov/api/census/#!/block/get_block_find (accessed Feb. 12, 2021).
@@ -64,7 +64,7 @@ Twitter and Instagram APIs may provide access to food-related Instagram posts an
 ### Social media data
 Social media posts on these popular platforms can yield a variety of insights. Source [#] estimated that x% of adults in the United States used Instagram in YEARS while source [#] estimated that x% of adults in the United States used Twitter in YEARS. These figures rose rapidly to x% in YEARS [#] and x% in YEARS [#], respectively.
 
-My project was directly inspired by de Choudhury, Sharma, and Kiciman [#], who used a list ELABORATED to produce hashtag queries for Instagram to study TOPIC. Widener and Li [#] also used a list ELABORATED as well as a Spanish list ELABORATED to similarly produce hashtag queries for Twitter to study TOPICS. Like these authors [#], a combination of automated and manual processes were used to generate the set of hashtag queries ultimately used for data collection.
+My project was directly inspired by de Choudhury, Sharma, and Kiciman [[1]](#1), who used a list ELABORATED to produce hashtag queries for Instagram to study TOPIC. Widener and Li [[2]](#2) also used a list ELABORATED as well as a Spanish list ELABORATED to similarly produce hashtag queries for Twitter to study TOPICS. Like these authors [#], a combination of automated and manual processes were used to generate the set of hashtag queries ultimately used for data collection.
 
 Since the YEAR Census data arguably reflects conditions in the United States population in the years directly prior to YEAR, the study period for my project was set between YEAR AND YEAR. Insofar as social media posts with food-related hashtags reflect patterns of food access and security, any public post about food made on Instagram or Twitter during the study period was potentially valid data. Of the posts matching these criteria, the potential study sample was further limited to those tagged with geolocation data.
 
@@ -74,7 +74,7 @@ I had two primary concerns for data collection of social media posts:
 
 My data would be biased if I only collected posts about a) certain classes of food over others or b) only the posts made by some groups of social media users but not others. I tried to mitigate these risks by thoughfully building the set of hashtag queries I used.
 
-The hashtags queries used in [1] generated about 3 million qualifying Instagram posts with a matching hashtag. I sought to expand on their methods by also incorporating various food corpora based on x [#], y [#], and z [#] into the set of hashtag queries. I also used [#], [#], and [#] as the basis for variants of demonymic adjectivals compounded with arguably unambiguous food words (e.g., African eats, American food, Californian dishes, Chinese restaurant, Italian cuisine, Persian dining, Southern cooking, etc.).
+The hashtags queries used by de Choudhury and colleagues [#] generated about 3 million qualifying Instagram posts with a matching hashtag. I sought to expand on their methods by also incorporating various food corpora based on x [#], y [#], and z [#] into the set of hashtag queries. I also used [#], [#], and [#] as the basis for variants of demonymic adjectivals compounded with arguably unambiguous food words (e.g., African eats, American food, Californian dishes, Chinese restaurant, Italian cuisine, Persian dining, Southern cooking, etc.).
 
 I made a deliberate effort to systematically include Spanish-language variants of candidate hashtag queries. CITE historic language demographic context here [#]. However, I did not expand the same effort to the languages ranked third or fourth over the same period for two reasons: 1) the third-ranking language shifted from LANG to LANG between YEAR and YEAR [#] and 2) I am insufficiently literate in the modern and casual usage of these languages, one of which may be better described as an aggregate of a group of languages rather than a single language.
 
@@ -118,4 +118,5 @@ Discuss feature engineering on the hashtags of each post for language modeling.
 Many features of social media posts were omitted from the cleaned dataset due to low face validity. The following features of Instagram posts were omitted: x, y, and z. For Twitter posts, the following were omitted: x, y, and z. Omitted features common to both Instagram and Twitter posts included x, y, and z.
 
 ## References
-to do
+1. <h3 hidden="true" inline="true">1</h3> M. de Choudhury, S. Sharma, and E. Kiciman, "Characterizing dietary choices, nutrition, and language in food deserts via social media," in *Proc. 19th ACM Conf. Comput.-Supported Cooperative Work and Social Comput.,* San Francisco, California, USA, Feb. 27–Mar. 2, 2016, pp. 1157–1170. doi: https://doi.org/10.1145/2818048.2819956.
+1. <h3 hidden="true" inline="true">2</h3> M. de Choudhury, S. Sharma, and E. Kiciman, "Characterizing dietary choices, nutrition, and language in food deserts via social media," in *Proc. 19th ACM Conf. Comput.-Supported Cooperative Work and Social Comput.,* San Francisco, California, USA, Feb. 27–Mar. 2, 2016, pp. 1157–1170. doi: https://doi.org/10.1145/2818048.2819956.
