@@ -64,7 +64,7 @@ Twitter and Instagram APIs may provide access to food-related Instagram posts an
 ### Social media data
 Social media posts on these popular platforms can yield a variety of insights. Source [#] estimated that x% of adults in the United States used Instagram in YEARS while source [#] estimated that x% of adults in the United States used Twitter in YEARS. These figures rose rapidly to x% in YEARS [#] and x% in YEARS [#], respectively.
 
-My project was directly inspired by de Choudhury, Sharma, and Kiciman [[1]](#[1]), who used a list ELABORATED to produce hashtag queries for Instagram to study TOPIC. Widener and Li [#] also used a list ELABORATED as well as a Spanish list ELABORATED to similarly produce hashtag queries for Twitter to study TOPICS. Like these authors [#], a combination of automated and manual processes were used to generate the set of hashtag queries ultimately used for data collection.
+My project was directly inspired by de Choudhury, Sharma, and Kiciman [[1]](#1), who used a list ELABORATED to produce hashtag queries for Instagram to study TOPIC. Widener and Li [[2]](#2) also used a list ELABORATED as well as a Spanish list ELABORATED to similarly produce hashtag queries for Twitter to study TOPICS. Like these authors [#], a combination of automated and manual processes were used to generate the set of hashtag queries ultimately used for data collection.
 
 Since the YEAR Census data arguably reflects conditions in the United States population in the years directly prior to YEAR, the study period for my project was set between YEAR AND YEAR. Insofar as social media posts with food-related hashtags reflect patterns of food access and security, any public post about food made on Instagram or Twitter during the study period was potentially valid data. Of the posts matching these criteria, the potential study sample was further limited to those tagged with geolocation data.
 
@@ -118,5 +118,7 @@ Discuss feature engineering on the hashtags of each post for language modeling.
 Many features of social media posts were omitted from the cleaned dataset due to low face validity. The following features of Instagram posts were omitted: x, y, and z. For Twitter posts, the following were omitted: x, y, and z. Omitted features common to both Instagram and Twitter posts included x, y, and z.
 
 ## References
-##### [1]
-  M. de Choudhury, S. Sharma, and E. Kiciman, "Characterizing dietary choices, nutrition, and language in food deserts via social media," in *Proc. 19th ACM Conf. Comput.-Supported Cooperative Work and Social Comput.,* San Francisco, California, USA, Feb. 27–Mar. 2, 2016, pp. 1157–1170. doi: https://doi.org/10.1145/2818048.2819956.
+<h3 hidden>1></h3>
+1. M. de Choudhury, S. Sharma, and E. Kiciman, "Characterizing dietary choices, nutrition, and language in food deserts via social media," in *Proc. 19th ACM Conf. Comput.-Supported Cooperative Work and Social Comput.,* San Francisco, California, USA, Feb. 27–Mar. 2, 2016, pp. 1157–1170. doi: https://doi.org/10.1145/2818048.2819956.
+<h3 hidden>2></h3>
+1. M. de Choudhury, S. Sharma, and E. Kiciman, "Characterizing dietary choices, nutrition, and language in food deserts via social media," in *Proc. 19th ACM Conf. Comput.-Supported Cooperative Work and Social Comput.,* San Francisco, California, USA, Feb. 27–Mar. 2, 2016, pp. 1157–1170. doi: https://doi.org/10.1145/2818048.2819956.
