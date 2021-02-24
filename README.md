@@ -1,7 +1,7 @@
 # Classify food desert status and predict food insecurity prevalence of areas in the US based on social media data
 
 ## Application
-Food deserts — areas with poor access to healthy and affordable food — exist mostly in socioeconomically disadvantaged areas associated with poor diet and related health outcomes. Because food deserts may contribute to social disparities, there is growing interest in identifying places that are likely to be food deserts. [Prior research](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/cscw_fooddeserts.pdf) has used the food-related hashtags of geotagged Instagram posts to predict whether different areas are food deserts. Ostensibly, classification accuracy could be improved if the images and captions of each Instagram post or food-related Tweets were also incorporated into the dataset.
+Food deserts — areas with poor access to healthy and affordable food — exist mostly in socioeconomically disadvantaged areas associated with poor diet and related health outcomes. Because food deserts may contribute to social disparities, there is growing interest in identifying places that are likely to be food deserts. [Prior research](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/cscw_fooddeserts.pdf) has used the food-related hashtags of geotagged Instagram posts to predict whether different parts of the United States are food deserts and to predict measures of food security. Ostensibly, classification and prediction accuracy could be improved if the images and captions of each Instagram post or food-related Tweets were also incorporated into the dataset.
 ## Data
 Twitter and Instagram APIs may provide access to food-related Instagram posts and tweets. [Food vocabulary lists](https://www.enchantedlearning.com/wordlist/food.shtml) have been useful in [prior research](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/cscw_fooddeserts.pdf) for topic modeling of text data and could be expanded. The [Food Environment Atlas](https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/) and the [Food Access Research Atlas](https://www.ers.usda.gov/data-products/food-access-research-atlas/download-the-data/) contain information about food access and security at the county and census tract levels (respectively) based on 2010 and 2015 US Census data.
 ## Data gathered for project submission
@@ -50,8 +50,9 @@ Twitter and Instagram APIs may provide access to food-related Instagram posts an
     * United States Department of Agriculture, *Food Access Research Atlas. V2017.05.18.* 2017. Distributed by Economic Research Service. Accessed Feb. 10, 2021. [Online]. Available: https://www.ers.usda.gov/data-products/food-access-research-atlas/download-the-data/
   * [Food_Environment_Atlas](https://github.com/michen00/Springboard_capstone_project/tree/main/Food_Environment_Atlas)
     * United States Department of Agriculture, *Food Environment Atlas. V2020.09.10.* 2020. Distributed by Economic Research Service. Accessed Feb. 10, 2021. [Online]. Available: https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/
-* [FoodData Central](https://github.com/michen00/Springboard_capstone_project/tree/main/FoodData_Central_csv_2020-10-30)
-  * United States Department of Agriculture, *FoodData Central. V2020.10.30.* 2020. Distributed by Agricultural Research service. Accessed Feb. 12, 2021. [Online]. Available: https://fdc.nal.usda.gov/download-datasets.html
+* Nutritional information
+  * [FoodData Central](https://github.com/michen00/Springboard_capstone_project/tree/main/FoodData_Central_csv_2020-10-30)
+    * United States Department of Agriculture, *FoodData Central. V2020.10.30.* 2020. Distributed by Agricultural Research service. Accessed Feb. 12, 2021. [ Online]. Available: https://fdc.nal.usda.gov/download-datasets.html
 
 ## [Related resources](https://github.com/michen00/Springboard_capstone_project/tree/main/related_work)
 * M. de Choudhury, S. Sharma, and E. Kiciman, "Characterizing dietary choices, nutrition, and language in food deserts via social media," in *Proc. 19th ACM Conf. Comput.-Supported Cooperative Work and Social Comput.,* San Francisco, California, USA, Feb. 27–Mar. 2, 2016, pp. 1157–1170. doi: https://doi.org/10.1145/2818048.2819956.
@@ -60,17 +61,8 @@ Twitter and Instagram APIs may provide access to food-related Instagram posts an
 * Federal Financial Institutions Examination Council. "FFIEC Online Census Data System." 2020. FFIEC.gov. https://www.ffiec.gov/census/default.aspx (accessed Feb. 12, 2021).
 
 ## Data collection methods
-### Nutritional and food access/security data
-Information about the food deserts themselves in the XX dataset provided by the YEAR United States Census, which designates Census-level tracts (quick explain) as food deserts based on the following criteria:
-* one
-* two
-[#]
-Further ratings? of food security are provided in the XX dataset [#] based on the same Census data.
-
-Macro-nutritional profiles of various foodstuffs are provided by the XX [#].
-
 ### Social media data
-Source [#] and source [#] estimate that x% and x% of adults in the United States use Instagram and Twitter (respectively). Social media posts on these popular platforms can yield a variety of insights.
+Social media posts on these popular platforms can yield a variety of insights. Source [#] estimated that x% of adults in the United States used Instagram in YEARS while source [#] estimated that x% of adults in the United States used Twitter in YEARS. These figures rose rapidly to x% in YEARS [#] and x% in YEARS [#], respectively.
 
 My project was directly inspired by de Choudhury, Sharma, and Kiciman [#], who used a list ELABORATED to produce hashtag queries for Instagram to study TOPIC. Widener and Li [#] also used a list ELABORATED as well as a Spanish list ELABORATED to similarly produce hashtag queries for Twitter to study TOPICS. Like these authors [#], a combination of automated and manual processes were used to generate the set of hashtag queries ultimately used for data collection.
 
@@ -82,7 +74,7 @@ I had two primary concerns for data collection of social media posts:
 
 My data would be biased if I only collected posts about a) certain classes of food over others or b) only the posts made by some groups of social media users but not others. I tried to mitigate these risks by thoughfully building the set of hashtag queries I used.
 
-The hashtags queries used in [1] generated about 3 million qualifying Instagram posts with a matching hashtag. I sought to expand on their methods by also incorporating various food corpora based on x [#], y [#], and z [#] into the set of hashtag queries. I also used [#], [#], and [#] as the basis for variants of demonymic adjectivals compounded with arguably unambiguous food words (e.g., African eats, American food, Chinese restaurant, Italian cuisine, Persian dining, etc.).
+The hashtags queries used in [1] generated about 3 million qualifying Instagram posts with a matching hashtag. I sought to expand on their methods by also incorporating various food corpora based on x [#], y [#], and z [#] into the set of hashtag queries. I also used [#], [#], and [#] as the basis for variants of demonymic adjectivals compounded with arguably unambiguous food words (e.g., African eats, American food, Californian dishes, Chinese restaurant, Italian cuisine, Persian dining, Southern cooking, etc.).
 
 I made a deliberate effort to systematically include Spanish-language variants of candidate hashtag queries. CITE historic language demographic context here [#]. However, I did not expand the same effort to the languages ranked third or fourth over the same period for two reasons: 1) the third-ranking language shifted from LANG to LANG between YEAR and YEAR [#] and 2) I am insufficiently literate in the modern and casual usage of these languages, one of which may be better described as an aggregate of a group of languages rather than a single language.
 
@@ -90,11 +82,40 @@ I have studied Spanish in school, but it is not native to me, so I chose to loos
 
 Like Widener and Li [#], I incorporated hashtags based on a list of Spanish vocabulary words [#] but additionally drew from [#], [#], and [#] to expand this list. I also included Spanish-language variants during hashtag research and used Google Translate to produce basic Spanish translations when generating variants of demonymic adjectivals.
 
-Although drawing from many sources to aggregate a corpus of food words yields a broad catchment of social media posts, noise is introduced when there is semantic ambiguity in the hashtag that leads to the retrieval of irrelevant posts. For instance, 'toast' can be a browned slice of bread or a call to a gathering of people to drink in honor of something. I manually omitted some potential hashtags because of their dubious utility as queries. some I manually developed a list of food words that I considered too ambiguous to be clearly related to food
+Although drawing from many sources to aggregate a corpus of food words yields a broad catchment of food-related social media posts, noise is introduced when there is semantic ambiguity in the hashtag that leads to the retrieval of irrelevant posts. For instance, 'shooter' can refer one who fires a gun or to a shot of liquor. Any overlap between food terminology and slang terms in other contexts (e.g., 'ice' as frozen water vs. diamond jewelry or methamphetamine [#], 'cheddar' as cheese vs. money [#], etc.) or homographs (e.g., 'date' as a pitted palm fruit vs. a day of month or year, a social engagement, or a verb) are additional sources of ambiguity as are false cognates between languages (e.g., pie' as a baked dish in English vs. an anatomical foot in Spanish) [#]. I manually omitted many such potential hashtags because of their dubious utility as queries and made sure the final set of hashtag queries was filtered for these.
 
-By expanding the set of candidate hashtags in this way, I was able to retrieve roughly X.Xx times the number of Instagram posts as [#] and X.Xx times the number of Twitter posts as [#].
+Variants on potential candidates were generated by doing x, y, and z. To do a, I used b [#] inflectors? pluralizers?. Duplicates were removed and each candidate was checked against the filter set as well as for validity as both an Instagram and Twitter hashtag [#]. An initial set of ### potential candidate hashtags was reduced to ### after ### candidates were dropped for returning zero posts (made during the study period??).
 
+To further reduce noise, only posts matching two or more candidate hashtags were considered for the study sample, excluding ### geotagged posts that matched just one candidate hashtag.
 
+(examine and discuss Number of posts with only one hashtag??)
+
+By expanding and preparing the set of candidate hashtags in this way, I retrieved ### Instagram posts and ### Twitter posts made during the study period via API queries. Respectively, ### (%) and ### (%) were geotagged within the United States.
+
+I was ultimately able to retrieve roughly X.Xx times the number of Instagram posts as [#] and X.Xx times the number of Twitter posts as [#].
+
+Factors considered in the preparation of each sub-corpus of food words are discussed below.
+
+#### sub-corpus
+elaborate here
+
+#### sub-corpus
+elaborate here
+
+### Nutritional and food access/security data
+Information about the food deserts themselves in the XX dataset provided by the YEAR United States Census, which designates Census-level tracts (quick explain) as food deserts by the following criteria:
+* one
+* two
+[#]
+Further ratings? of food security per Census-level tract are provided in the XX dataset [#] based on the same YEAR Census data.
+
+The latitude and longitude coordinates of each geotag were mapped to a corresponding census tract using XX [#].
+
+Like de Choudhury et al. [#], I used the XX [#], which DESC, to derive a macro-nutritional profile for ### Instagram posts and ### Twitter posts with a matching hashtag, #% and #% of the study sample respectively. In addition, I used XX API [#] to obtain MORE DATA for ### Instagram posts and ### Twitter posts, #% and #% of the study sample respectively. Using one or both methods, I was able to derive nutritional features for a total of ### (#%) social media posts.
+
+Discuss feature engineering on the hashtags of each post for language modeling.
+
+Many features of social media posts were omitted from the cleaned dataset due to low face validity. The following features of Instagram posts were omitted: x, y, and z. For Twitter posts, the following were omitted: x, y, and z. Omitted features common to both Instagram and Twitter posts included x, y, and z.
 
 ## References
 to do
