@@ -118,8 +118,10 @@ Discuss feature engineering on the hashtags of each post for language modeling.
 Many features of social media posts were omitted from the cleaned dataset due to low face validity. The following features of Instagram posts were omitted: x, y, and z. For Twitter posts, the following were omitted: x, y, and z. Omitted features common to both Instagram and Twitter posts included x, y, and z.
 
 ## References
-<h6><small><sub><sup><sub><sup><sub><sup><sub><sup><sub><sup><sub><sup><sub><sup><sub><sup>1</sup></sub></sup></sub></sup></sub></sup></sub></sup></sub></sup></sub></sup></sub></sup></sub></small></h6>
+<h6><sub><sup><sub><sup><sub><sup><sub><sup><sub><sup><sub><sup><sub><sup><sub>1</sub></sup></sub></sup></sub></sup></sub></sup></sub></sup></sub></sup></sub></sup></sub></h6>
+
 1. M. de Choudhury, S. Sharma, and E. Kiciman, "Characterizing dietary choices, nutrition, and language in food deserts via social media," in *Proc. 19th ACM Conf. Comput.-Supported Cooperative Work and Social Comput.,* San Francisco, California, USA, Feb. 27–Mar. 2, 2016, pp. 1157–1170. doi: https://doi.org/10.1145/2818048.2819956.
 
 <h6><sub><sup><sub><sup><sub><sup><sub><sup><sub><sup><sub><sup><sub><sup><sub><sup>2</sup></sub></sup></sub></sup></sub></sup></sub></sup></sub></sup></sub></sup></sub></sup></sub></h6>
+
 1. Authors 2, "Characterizing dietary choices, nutrition, and language in food deserts via social media," in *Proc. 19th ACM Conf. Comput.-Supported Cooperative Work and Social Comput.,* San Francisco, California, USA, Feb. 27–Mar. 2, 2016, pp. 1157–1170. doi: https://doi.org/10.1145/2818048.2819956.
