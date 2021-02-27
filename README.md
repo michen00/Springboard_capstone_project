@@ -1,11 +1,16 @@
-# Classify food desert status and predict food insecurity prevalence of areas in the US based on social media data
+# Classify food desert status and predict food insecurity prevalence of areas in the United States based on food-related social media posts
 
 ## Application
-Food deserts — areas with poor access to healthy and affordable food — exist mostly in socioeconomically disadvantaged areas associated with poor diet and related health outcomes. Because food deserts may contribute to social disparities, there is growing interest in identifying places that are likely to be food deserts. [Prior research](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/cscw_fooddeserts.pdf) has used the food-related hashtags of geotagged Instagram posts to predict whether different parts of the United States are food deserts and to predict measures of food security. Ostensibly, classification and prediction accuracy could be improved if the images and captions of each Instagram post or food-related Tweets were also incorporated into the dataset.
+Food deserts — areas with poor access to healthy and affordable food — exist mostly in socioeconomically disadvantaged areas associated with poor diet and related health outcomes. Because food deserts may contribute to social disparities, there is growing interest in identifying places that are likely to be food deserts. Food-related hashtags of geotagged Instagram posts have been used in [prior research](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/cscw_fooddeserts.pdf) to predict whether different parts of the United States are food deserts as well as to predict measures of food security [[1]](#1). Similarly, [others](https://www.public.asu.edu/~wenwenl1/papers/17.pdf) have used geotaged tweets with food-related hashtags to do machine learning [[2]](#2). Ostensibly, classification and prediction accuracy could be improved if the images and captions of each food-related geotagged Instagram post as well as food-related Tweets were incorporated into the dataset.
+
 ## Data
-Twitter and Instagram APIs may provide access to food-related Instagram posts and tweets. [Food vocabulary lists](https://www.enchantedlearning.com/wordlist/food.shtml) have been useful in [prior research](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/cscw_fooddeserts.pdf) for topic modeling of text data and could be expanded. The [Food Environment Atlas](https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/) and the [Food Access Research Atlas](https://www.ers.usda.gov/data-products/food-access-research-atlas/download-the-data/) contain information about food access and security at the county and census tract levels (respectively) based on 2010 and 2015 US Census data.
-## Data gathered for project submission
-* Geotagged Instagram and Twitter posts filtered for food words gathered via API (forthcoming)
+Hashtag queries were developed by incorporating corpora of food words from various sources and refined through a combination of manual and automated methods. Twitter and Instagram were queried via their respective APIs to retreive ### food-related Instagram posts and ### food-related tweets between YEAR and YEAR.
+
+Nutritional profiles were derived for ### Instaby mapping corresponding nutritive here.
+
+The [Food Environment Atlas](https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/) and the [Food Access Research Atlas](https://www.ers.usda.gov/data-products/food-access-research-atlas/download-the-data/) contain information about food access and security at the county and census tract levels (respectively) based on 2010 and 2015 US Census data.
+
+* Geotagged Instagram and Twitter posts gathered via API with food queries (forthcoming)
 * [Food words corpora](https://github.com/michen00/Springboard_capstone_project/tree/main/food_words)
   * [DiscoverTheMenu](https://github.com/michen00/Springboard_capstone_project/tree/main/food_words/DiscoverTheMenu)
     * New York Public Library, *Discover The Menu.* 2017. Distributed by data.world. Accessed Feb. 10, 2021. [Online]. Available: https://data.world/data-society/discover-the-menu
@@ -45,6 +50,8 @@ Twitter and Instagram APIs may provide access to food-related Instagram posts an
     * YouGov PLC. "The most popular food & snack brands in America." 2018. YouGov.com. https://today.yougov.com/ratings/food/popularity/food-snack-brands/all (accesssed Feb. 16, 2021).
   * [state_foods](https://github.com/michen00/Springboard_capstone_project/tree/main/food_words/state_foods)
     * Wikipedia contributors. "List of U.S. state foods." Feb. 1, 2021. Wikipedia, The Free Encyclopedia. https://en.wikipedia.org/w/index.php?title=List_of_U.S._state_foods&oldid=1004266086 (accessed Feb. 17, 2021).
+  * [Widener+Li](https://github.com/michen00/Springboard_capstone_project/tree/main/food_words/Widener+Li)
+    * M. J. Widener and W. Li, "Using geolocated Twitter data to monitor the prevalence of healthy and unhealthy food references across the US," *Appl. Geopgrahy,* vol. 54, pp. 189–197, Oct. 2014, doi: https://doi.org/10.1016/j.apgeog.2014.07.017.
 * US Census food access and security
   * [Food_Access_Research_Atlas](https://github.com/michen00/Springboard_capstone_project/tree/main/Food_Access_Research_Atlas)
     * United States Department of Agriculture, *Food Access Research Atlas. V2017.05.18.* 2017. Distributed by Economic Research Service. Accessed Feb. 10, 2021. [Online]. Available: https://www.ers.usda.gov/data-products/food-access-research-atlas/download-the-data/
@@ -69,8 +76,8 @@ My project was directly inspired by de Choudhury, Sharma, and Kiciman [[1]](#1),
 Since the YEAR Census data arguably reflects conditions in the United States population in the years directly prior to YEAR, the study period for my project was set between YEAR AND YEAR. Insofar as social media posts with food-related hashtags reflect patterns of food access and security, any public post about food made on Instagram or Twitter during the study period was potentially valid data. Of the posts matching these criteria, the potential study sample was further limited to those tagged with geolocation data.
 
 I had two primary concerns for data collection of social media posts:
-1. Avoiding bias in the sample
-1. Minimizing noise in the sample
+1. Avoiding bias in the sample.
+1. Minimizing noise in the sample.
 
 My data would be biased if I only collected posts about a) certain classes of food over others or b) only the posts made by some groups of social media users but not others. I tried to mitigate these risks by thoughfully building the set of hashtag queries I used.
 
@@ -118,5 +125,10 @@ Discuss feature engineering on the hashtags of each post for language modeling.
 Many features of social media posts were omitted from the cleaned dataset due to low face validity. The following features of Instagram posts were omitted: x, y, and z. For Twitter posts, the following were omitted: x, y, and z. Omitted features common to both Instagram and Twitter posts included x, y, and z.
 
 ## References
-1. <h3 hidden="true" inline="true">1</h3> M. de Choudhury, S. Sharma, and E. Kiciman, "Characterizing dietary choices, nutrition, and language in food deserts via social media," in *Proc. 19th ACM Conf. Comput.-Supported Cooperative Work and Social Comput.,* San Francisco, California, USA, Feb. 27–Mar. 2, 2016, pp. 1157–1170. doi: https://doi.org/10.1145/2818048.2819956.
-1. <h3 hidden="true" inline="true">2</h3> M. de Choudhury, S. Sharma, and E. Kiciman, "Characterizing dietary choices, nutrition, and language in food deserts via social media," in *Proc. 19th ACM Conf. Comput.-Supported Cooperative Work and Social Comput.,* San Francisco, California, USA, Feb. 27–Mar. 2, 2016, pp. 1157–1170. doi: https://doi.org/10.1145/2818048.2819956.
+<span aria-hidden="true"><h6><sub><sup><sub><sup>1</sup></sub></sup></sub></h6></span>
+
+1. M. de Choudhury, S. Sharma, and E. Kiciman, "Characterizing dietary choices, nutrition, and language in food deserts via social media," in *Proc. 19th ACM Conf. Comput.-Supported Cooperative Work and Social Comput.,* San Francisco, California, USA, Feb. 27–Mar. 2, 2016, pp. 1157–1170. doi: https://doi.org/10.1145/2818048.2819956.
+
+<span aria-hidden="true"><h6><sub><sup><sub><sup>2</sup></sub></sup></sub></h6></span>
+
+2. Authors 2, "Characterizing dietary choices, nutrition, and language in food deserts via social media," in *Proc. 19th ACM Conf. Comput.-Supported Cooperative Work and Social Comput.,* San Francisco, California, USA, Feb. 27–Mar. 2, 2016, pp. 1157–1170. doi: https://doi.org/10.1145/2818048.2819956.
