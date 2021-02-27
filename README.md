@@ -5,7 +5,7 @@ Food deserts — areas with poor access to healthy and affordable food — exist
 ## Data
 Twitter and Instagram APIs may provide access to food-related Instagram posts and tweets. [Food vocabulary lists](https://www.enchantedlearning.com/wordlist/food.shtml) have been useful in [prior research](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/cscw_fooddeserts.pdf) for topic modeling of text data and could be expanded. The [Food Environment Atlas](https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/) and the [Food Access Research Atlas](https://www.ers.usda.gov/data-products/food-access-research-atlas/download-the-data/) contain information about food access and security at the county and census tract levels (respectively) based on 2010 and 2015 US Census data.
 ## Data gathered for project submission
-* Geotagged Instagram and Twitter posts filtered for food words gathered via API (forthcoming)
+* Geotagged Instagram and Twitter posts gathered via API with food queries (forthcoming)
 * [Food words corpora](https://github.com/michen00/Springboard_capstone_project/tree/main/food_words)
   * [DiscoverTheMenu](https://github.com/michen00/Springboard_capstone_project/tree/main/food_words/DiscoverTheMenu)
     * New York Public Library, *Discover The Menu.* 2017. Distributed by data.world. Accessed Feb. 10, 2021. [Online]. Available: https://data.world/data-society/discover-the-menu
@@ -118,6 +118,10 @@ Discuss feature engineering on the hashtags of each post for language modeling.
 Many features of social media posts were omitted from the cleaned dataset due to low face validity. The following features of Instagram posts were omitted: x, y, and z. For Twitter posts, the following were omitted: x, y, and z. Omitted features common to both Instagram and Twitter posts included x, y, and z.
 
 ## References
-<h6><sub><sup><sub><sup>1</sup></sub></sup></sub></h6> 1. M. de Choudhury, S. Sharma, and E. Kiciman, "Characterizing dietary choices, nutrition, and language in food deserts via social media," in *Proc. 19th ACM Conf. Comput.-Supported Cooperative Work and Social Comput.,* San Francisco, California, USA, Feb. 27–Mar. 2, 2016, pp. 1157–1170. doi: https://doi.org/10.1145/2818048.2819956.
+<span aria-hidden="true"><h6><sub><sup><sub><sup>1</sup></sub></sup></sub></h6></span>
 
-<h6><sub><sup><sub><sup>2</sup></sub></sup></sub></h6> 2. Authors 2, "Characterizing dietary choices, nutrition, and language in food deserts via social media," in *Proc. 19th ACM Conf. Comput.-Supported Cooperative Work and Social Comput.,* San Francisco, California, USA, Feb. 27–Mar. 2, 2016, pp. 1157–1170. doi: https://doi.org/10.1145/2818048.2819956.
+1. M. de Choudhury, S. Sharma, and E. Kiciman, "Characterizing dietary choices, nutrition, and language in food deserts via social media," in *Proc. 19th ACM Conf. Comput.-Supported Cooperative Work and Social Comput.,* San Francisco, California, USA, Feb. 27–Mar. 2, 2016, pp. 1157–1170. doi: https://doi.org/10.1145/2818048.2819956.
+
+<span aria-hidden="true"><h6><sub><sup><sub><sup>2</sup></sub></sup></sub></h6></span>
+
+2. Authors 2, "Characterizing dietary choices, nutrition, and language in food deserts via social media," in *Proc. 19th ACM Conf. Comput.-Supported Cooperative Work and Social Comput.,* San Francisco, California, USA, Feb. 27–Mar. 2, 2016, pp. 1157–1170. doi: https://doi.org/10.1145/2818048.2819956.
