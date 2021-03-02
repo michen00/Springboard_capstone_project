@@ -1,12 +1,12 @@
 # Classify food desert status and predict food insecurity prevalence of areas in the United States based on food-related social media posts
 
 ## Application
-Food deserts — areas with poor access to healthy and affordable food — exist mostly in socioeconomically disadvantaged areas associated with poor diet and related health outcomes. Because food deserts may contribute to social disparities, there is growing interest in identifying places that are likely to be food deserts. Food-related hashtags of geotagged Instagram posts have been used in [prior research](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/cscw_fooddeserts.pdf) to predict whether different parts of the United States are food deserts as well as to predict measures of food security [[1]](#1). Similarly, [others](https://www.public.asu.edu/~wenwenl1/papers/17.pdf) have used geotaged tweets with food-related hashtags to do machine learning [[2]](#2). Ostensibly, classification and prediction accuracy could be improved if the images and captions of each food-related geotagged Instagram post as well as food-related Tweets were incorporated into the dataset.
+Food deserts — areas with poor access to healthy and affordable food — exist mostly in socioeconomically disadvantaged areas associated with poor diet and related health outcomes. Because food deserts may contribute to social disparities, there is growing interest in identifying places that are likely to be food deserts. Food-related hashtags of geotagged Instagram posts have been used in [prior research](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/cscw_fooddeserts.pdf) to classify whether different parts of the United States are food deserts as well as to predict measures of food security [[1]](#1). Others have used geolocated tweets to explore patterns in the language of food references in the United States [[2]](#2)[[3]](#3). Ostensibly, classification and prediction accuracy could be improved if both Instagram and Twitter the images and captions of each food-related geotagged Instagram post as well as food-related Tweets were incorporated into the dataset.
 
 ## Data
 Hashtag queries were developed by incorporating corpora of food words from various sources and refined through a combination of manual and automated methods. Twitter and Instagram were queried via their respective APIs to retreive ### food-related Instagram posts and ### food-related tweets between YEAR and YEAR.
 
-Nutritional profiles were derived for ### Instaby mapping corresponding nutritive here.
+Nutritional profiles were derived for ### Insta by mapping corresponding nutritive here.
 
 The [Food Environment Atlas](https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/) and the [Food Access Research Atlas](https://www.ers.usda.gov/data-products/food-access-research-atlas/download-the-data/) contain information about food access and security at the county and census tract levels (respectively) based on 2010 and 2015 US Census data.
 
@@ -62,8 +62,6 @@ The [Food Environment Atlas](https://www.ers.usda.gov/data-products/food-environ
     * United States Department of Agriculture, *FoodData Central. V2020.10.30.* 2020. Distributed by Agricultural Research service. Accessed Feb. 12, 2021. [ Online]. Available: https://fdc.nal.usda.gov/download-datasets.html
 
 ## [Related resources](https://github.com/michen00/Springboard_capstone_project/tree/main/related_work) merge this with references TODO
-* M. de Choudhury, S. Sharma, and E. Kiciman, "Characterizing dietary choices, nutrition, and language in food deserts via social media," in *Proc. 19th ACM Conf. Comput.-Supported Cooperative Work and Social Comput.,* San Francisco, California, USA, Feb. 27–Mar. 2, 2016, pp. 1157–1170. doi: https://doi.org/10.1145/2818048.2819956.
-* M. J. Widener and W. Li, "Using geolocated Twitter data to monitor the prevalence of healthy and unhealthy food references across the US," *Appl. Geopgrahy,* vol. 54, pp. 189–197, Oct. 2014, doi: https://doi.org/10.1016/j.apgeog.2014.07.017.
 * United States Federal Communincations Commission. "API Documentation for Developers." FCC.gov. https://geo.fcc.gov/api/census/#!/block/get_block_find (accessed Feb. 12, 2021).
 * Federal Financial Institutions Examination Council. "FFIEC Online Census Data System." 2020. FFIEC.gov. https://www.ffiec.gov/census/default.aspx (accessed Feb. 12, 2021).
 
@@ -131,4 +129,8 @@ Many features of social media posts were omitted from the cleaned dataset due to
 
 <span aria-hidden="true"><h6><sub><sup><sub><sup>2</sup></sub></sup></sub></h6></span>
 
-2. Authors 2, "Characterizing dietary choices, nutrition, and language in food deserts via social media," in *Proc. 19th ACM Conf. Comput.-Supported Cooperative Work and Social Comput.,* San Francisco, California, USA, Feb. 27–Mar. 2, 2016, pp. 1157–1170. doi: https://doi.org/10.1145/2818048.2819956.
+2. M. J. Widener and W. Li, "Using geolocated Twitter data to monitor the prevalence of healthy and unhealthy food references across the US," *Appl. Geopgrahy,* vol. 54, pp. 189–197, Oct. 2014, doi: https://doi.org/10.1016/j.apgeog.2014.07.017.
+
+<span aria-hidden="true"><h6><sub><sup><sub><sup>3</sup></sub></sup></sub></h6></span>
+
+3. D. Fried, M. Surdeanu, S. Kobourov, M. Hingle, and D. Bell. "Analyzing the language of food on social media," in *Proc. 2014 IEEE Int. Conf. Big Data,* Washington, DC, USA, Oct. 27–30, 2014, pp. 778–783. doi:https://doi.org/10.1109/BigData.2014.7004305.
