@@ -1,16 +1,17 @@
 # Classify food desert status and predict food insecurity prevalence of areas in the United States based on food-related social media posts
 
 ## Application
-Food deserts — areas with poor access to healthy and affordable food — exist mostly in socioeconomically disadvantaged areas associated with poor diet and related health outcomes. Because food deserts may contribute to social disparities, there is growing interest in identifying places that are likely to be food deserts. Food-related hashtags of geotagged Instagram posts have been used in [prior research](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/cscw_fooddeserts.pdf) to classify whether different parts of the United States are food deserts as well as to predict measures of food security [[1]](#1). Others have used geolocated tweets to explore patterns in the language of food references in the United States [[2]](#2)[[3]](#3). Ostensibly, classification and prediction accuracy could be improved if both Instagram and Twitter the images and captions of each food-related geotagged Instagram post as well as food-related Tweets were incorporated into the dataset.
+Food deserts — areas with poor access to healthy and affordable food — exist mostly in socioeconomically disadvantaged areas associated with poor diet and related health outcomes. Because food deserts may contribute to social disparities, there is growing interest in identifying places that are likely to be food deserts. Food-related hashtags of geotagged Instagram posts have been used in [prior research](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/cscw_fooddeserts.pdf) to classify whether different parts of the United States are food deserts as well as to predict measures of food security [[1]](#1). Others have used geolocated tweets to explore patterns in the language of food references in the United States [[2]](#2)[[3]](#3). Ostensibly, classification and prediction accuracy could be improved if images, captions, and hashtags of food-related Instagram posts as well as food-related Twitter content were incorporated into the dataset.
 
 ## Data
-Hashtag queries were developed by incorporating corpora of food words from various sources and refined through a combination of manual and automated methods. Twitter and Instagram were queried via their respective APIs to retreive ### food-related Instagram posts and ### food-related tweets between YEAR and YEAR.
+Hashtag queries were developed by incorporating corpora of food words from various sources and refined through a combination of manual and automated methods. Instagram and Twitter were queried via their respective APIs [[4]](#4) [[5]](#5) to retreive ### geotagged, food-related posts from Instagram and ### from Twitter between YEAR and YEAR.
 
-Nutritional profiles were derived for ### Insta by mapping corresponding nutritive here.
+Nutritional profiles by mapping matching hashtags to corresponding nutritive information in .
 
 The [Food Environment Atlas](https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/) and the [Food Access Research Atlas](https://www.ers.usda.gov/data-products/food-access-research-atlas/download-the-data/) contain information about food access and security at the county and census tract levels (respectively) based on 2010 and 2015 US Census data.
 
 * Geotagged Instagram and Twitter posts gathered via API with food queries (forthcoming)
+  * temp
 * [Food words corpora](https://github.com/michen00/Springboard_capstone_project/tree/main/food_words)
   * [DiscoverTheMenu](https://github.com/michen00/Springboard_capstone_project/tree/main/food_words/DiscoverTheMenu)
     * New York Public Library, *Discover The Menu.* 2017. Distributed by data.world. Accessed Feb. 10, 2021. [Online]. Available: https://data.world/data-society/discover-the-menu
@@ -62,7 +63,7 @@ The [Food Environment Atlas](https://www.ers.usda.gov/data-products/food-environ
     * United States Department of Agriculture, *FoodData Central. V2020.10.30.* 2020. Distributed by Agricultural Research service. Accessed Feb. 12, 2021. [ Online]. Available: https://fdc.nal.usda.gov/download-datasets.html
 
 ## [Related resources](https://github.com/michen00/Springboard_capstone_project/tree/main/related_work) merge this with references TODO
-* United States Federal Communincations Commission. "API Documentation for Developers." FCC.gov. https://geo.fcc.gov/api/census/#!/block/get_block_find (accessed Feb. 12, 2021).
+* United States Federal Communications Commission. "API Documentation for Developers." FCC.gov. https://geo.fcc.gov/api/census/#!/block/get_block_find (accessed Feb. 12, 2021).
 * Federal Financial Institutions Examination Council. "FFIEC Online Census Data System." 2020. FFIEC.gov. https://www.ffiec.gov/census/default.aspx (accessed Feb. 12, 2021).
 
 ## Data collection methods
@@ -134,3 +135,12 @@ Many features of social media posts were omitted from the cleaned dataset due to
 <span aria-hidden="true"><h6><sub><sup><sub><sup>3</sup></sub></sup></sub></h6></span>
 
 3. D. Fried, M. Surdeanu, S. Kobourov, M. Hingle, and D. Bell. "Analyzing the language of food on social media," in *Proc. 2014 IEEE Int. Conf. Big Data,* Washington, DC, USA, Oct. 27–30, 2014, pp. 778–783. doi:https://doi.org/10.1109/BigData.2014.7004305.
+
+<span aria-hidden="true"><h6><sub><sup><sub><sup>4</sup></sub></sup></sub></h6></span>
+
+4. Instagram API
+
+<span aria-hidden="true"><h6><sub><sup><sub><sup>5</sup></sub></sup></sub></h6></span>
+
+5. Twitter API
+
